@@ -1,5 +1,19 @@
 body{
+    font-size: 2vh;
     background-color: #f7f7f7 !important;
+}
+
+.logo-bloque{
+    justify-content: flex-start !important;
+}
+.table thead th{
+    border-bottom: 1px !important;
+}
+.container-tables{
+    box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
+}
+.table td, .table th{
+    border-top-width: 0.7px !important;
 }
 @media only screen and (max-width: 768px) {
     .nav-links-bloque {
@@ -8,9 +22,37 @@ body{
     .mobile-menu{
         display: block !important;
     }
-    .logo-bloque{
-        justify-content: flex-start !important;
+    .overview-section .pr-3{
+        padding: 0 !important;
     }
+
+}
+
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 2.5vw !important;
+    }
+    h2{   
+        font-size: 2vw !important;
+    }
+    h3{   
+        font-size: 1.5vw !important;
+    }
+    h4{   
+        font-size: 1.3vw !important;
+    }
+    h5{   
+        font-size: 1.15vw !important;
+    }
+    h6{   
+        font-size: 1vw !important;
+    }
+    p{   
+        font-size: 0.7vw !important;
+    }
+}
+.navbar-height{
+    height: 17vh;
 }
 .mobile-menu{
     display: none;
@@ -28,9 +70,12 @@ body{
     margin-right: 0 !important;
 }
 .full-centered{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
+}
+.form-group{
+    margin-bottom: 0 !important;
 }
 a:hover{
     text-decoration: none !important;
@@ -49,7 +94,7 @@ a:hover{
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .overview-inner-top-bloque{
     z-index: 999;
@@ -64,7 +109,11 @@ a:hover{
     border: 1px solid #b7b9ba;
     border-radius: 0.5rem;
 }
+.circle-question-mark>svg{
+    fill: #707070;
+}
 .circle-question-mark{
+    cursor: pointer;
     position: absolute; top:5px; right: 10px; width: 20px;
 }
 .circle-question-mark:hover + .overview-inner-top-bloque{
@@ -81,7 +130,7 @@ a:hover{
     border-radius: 1rem;
 }
 .height-200{
-    height: 200px !important;
+    height: 25vh !important;
 }
 th{
     font-weight: 500;

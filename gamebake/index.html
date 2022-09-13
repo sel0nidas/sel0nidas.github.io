@@ -11,73 +11,8 @@
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="dashboard-body">
+
     <!--
-    <style>
-        body{
-            background-color: #f7f7f7;
-        }
-        .row{
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
-        .full-centered{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        a:hover{
-            text-decoration: none;
-        }
-        .nav-links-bloque>a{
-            padding: 0% 2.5%;
-            color: #6c757d;
-        }
-        .overview-bloque-inner{
-            height: 100%;
-            padding: 5% 4%;
-            padding-top: 0 !important;
-            box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
-            border-radius: 0.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        .overview-inner-top-bloque{
-            box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
-            border: 1px solid #b7b9ba;
-            border-radius: 0.5rem;
-        }
-        .overview-inner{
-            color: #6c757d;
-            display: flex;
-            padding: 2% 7%;
-            align-items: flex-end;
-        }
-        .table-border{
-            border-radius: 1rem;
-        }
-        .height-200{
-            height: 200px !important;
-        }
-        th{
-            font-weight: 500;
-        }
-        th,td{
-            color: #6c757d;
-        }
-        .table-view-btn{
-            border: 1px solid #b7b9ba;
-            padding: 2% 5%;
-            color: #6c757d;
-            transition: all 0.2s ease-in-out;
-        }
-        .table-view-btn:hover{
-            background-color: black;
-            color: white;
-            transition: all 0.2s ease-in-out;
-        }
-    </style>
-    -->
     <div id="mySidenav" class="sidenav">
         <div class="sidenav-top row" style="margin-right: 0 !important;">
             <div class="sidenav-btc col-10" style="display: flex; align-items: center;">
@@ -113,11 +48,12 @@
             </a>
         </div>
     </div>
-
-    <div class="navbar row">
-        <div class="col-md-2 col-10 logo-bloque full-centered">
-            <img src="assets/GameBake_purple_logo.png">
+    -->
+    <div class="navbar row navbar-height">
+        <div class="col-md-2 col-10 h-100 logo-bloque full-centered">
+            <img src="assets/GameBake_purple_logo.png" height="100%">
         </div>
+        <!--
         <div class="col-md-8 nav-links-bloque ">
             <a href="#">Overview</a>
             <a href="#">Games</a>
@@ -130,30 +66,24 @@
         </div>
         <div class="mobile-menu col-2">
             <a onclick="openNav()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
             </a>
         </div>
-        
+        -->    
     </div>
-    <div class="container-fluid" style="padding: 2%;">
+    
+
+    <div class="container-fluid" style="padding: 1% 2%;">
         <div class="row">   
             <div class="col-md-7">
                 <h1 class="text-secondary">Overview</h1>
                 <h6 class="text-secondary">Lorem Ipsum dolor sit amet</h6>
             </div>
-            <div class="col-md-5 row" style="display: flex; align-items: center;">
-                <div id="reportrange" class="col-md-8" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%">
-                    <i class="fa fa-calendar"></i>&nbsp;
+            <div class="col-md-5 row" style="display: flex; align-items: center; justify-content: flex-end;">
+                <div id="reportrange" class="col-md-8" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 100%; display: flex; align-items: center;">
+                    <i class="gj-icon">event</i>&nbsp;
                     <span></span><i class="fa fa-caret-down"></i>
                 </div>
-                <div class="col-md-4">
-                    <input id="datepicker" width="100%"/>
-                </div>
-                <!--
-                <div class="col-md-6">
-                    <input id="datepicker2" width="100%"/>
-                </div>
-                -->
             </div>
             <div class="col-md-12 mt-3 row overview-section">
                 <div class="col-md-3 height-200 mb-4 pr-3 pl-0 rounded">
@@ -163,7 +93,7 @@
                         </div>
                         <div class="overview-inner overview-inner-top-bloque">All revenue figures are displayed are estimated</div>
                         
-                        <div class="overview-inner"><h2 style="margin: 0 !important;">DAU</h2><h6>(Yesterday)</h6></div>
+                        <div class="overview-inner"><h2 style="margin: 0 !important;">Revenue</h2><h6>(Yesterday)</h6></div>
                         <div>
                             <h2>$3,331</h2>
                             <h6 class="text-success">+%25(vs. Previous Day)</h6>
@@ -179,8 +109,8 @@
                         <div class="overview-inner overview-inner-top-bloque">All revenue figures are displayed are estimated</div>
                         <div class="overview-inner"><h2 style="margin: 0 !important;">DAU</h2><h6>(Yesterday)</h6></div>
                         <div>
-                            <h2>$3,331</h2>
-                            <h6 class="text-success">+%25(vs. Previous Day)</h6>
+                            <h2>14,317</h2>
+                            <h6 class="text-success">+%5(vs. Previous Day)</h6>
                         </div>
                     </div>
                 </div>
@@ -191,10 +121,10 @@
                         </div>
                         <div class="overview-inner overview-inner-top-bloque">All revenue figures are displayed are estimated</div>
                         
-                        <div class="overview-inner"><h2 style="margin: 0 !important;">DAU</h2><h6>(Yesterday)</h6></div>
+                        <div class="overview-inner"><h2 style="margin: 0 !important;">MAU</h2><h6>(Yesterday)</h6></div>
                         <div>
-                            <h2>$3,331</h2>
-                            <h6 class="text-danger">+%25(vs. Previous Day)</h6>
+                            <h2>116,804</h2>
+                            <h6 class="text-danger">-%10(vs. Previous Day)</h6>
                         </div>
                     </div>
                 </div>
@@ -207,67 +137,67 @@
                         
                         <div class="overview-inner overview-inner-top-bloque">All revenue figures are displayed are estimated</div>
                         
-                        <div class="overview-inner"><h2 style="margin: 0 !important;">DAU</h2><h6>(Yesterday)</h6></div>
+                        <div class="overview-inner"><h2 style="margin: 0 !important;">New Users</h2><h6>(Yesterday)</h6></div>
                         <div>
-                            <h2>$3,331</h2>
-                            <h6 class="text-success">+%25(vs. Previous Day)</h6>
+                            <h2>9,603</h2>
+                            <h6 class="text-success">+%2(vs. Previous Day)</h6>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-12 mt-5">
 
-                <table class="table table-border bg-white">
+                <table class="table container-tables table-border bg-white">
                     <thead>
                       <tr>
-                        <th scope="col"><b>Games</b></th>
+                        <td scope="col" style="border: 0 !important;"><b>Games</b></td>
                       </tr>
                       <tr>
-                        <th scope="col">Live Channels</th>
-                        <th scope="col">Game</th>
+                        <th scope="col" style="width:15%">Live Channels</th>
+                        <th scope="col" style="width:25%">Game</th>
                         <th scope="col">Revenue</th>
                         <th scope="col">DAU</th>
                         <th scope="col">New Users</th>
-                        <th scope="col">DAU</th>
-                        <th scope="col"></th>
+                        <th scope="col">MAU</th>
+                        <!--<th scope="col"></th>-->
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
+                        <td>1</td>
                         <td><img src="assets/Square-Bird-thumb.png" width="40" height="40" style="margin-right: 5%;">Squid Bird</td>
                         <td>Otto</td>
                         <td>@mdo</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td><a href="#" class="table-view-btn">View</a></td>
+                        <!--<td><a href="#" class="table-view-btn">View</a></td>-->
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
+                        <td>2</td>
                         <td><img src="assets/Square-Bird-thumb.png" width="40" height="40" style="margin-right: 5%;">Squid Bird</td>
                         <td>Thornton</td>
                         <td>@fat</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td><a href="#" class="table-view-btn">View</a></td>
+                        <!--<td><a href="#" class="table-view-btn">View</a></td>-->
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
+                        <td>3</td>
                         <td><img src="assets/Square-Bird-thumb.png" width="40" height="40" style="margin-right: 5%;">Squid Bird</td>
                         <td>the Bird</td>
                         <td>@twitter</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td><a href="#" class="table-view-btn">View</a></td>
+                        <!--<td><a href="#" class="table-view-btn">View</a></td>-->
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
+                        <td>3</td>
                         <td><img src="assets/Square-Bird-thumb.png" width="40" height="40" style="margin-right: 5%;">Squid Bird</td>
                         <td>the Bird</td>
                         <td>@twitter</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td><a href="#" class="table-view-btn">View</a></td>
+                        <!--<td><a href="#" class="table-view-btn">View</a></td>-->
                       </tr>
                     </tbody>
                   </table>
@@ -275,24 +205,24 @@
             
             <div class="col-md-12 mt-5">
 
-                <table class="table table-border bg-white">
+                <table class="table container-tables table-border bg-white">
                     <thead>
                       <tr>
-                        <th scope="col"><b>Games</b></th>
+                        <th scope="col" style="border: 0 !important;"><b>Channels</b></th>
                       </tr>
                       <tr>
-                        <th scope="col">Live Channels</th>
-                        <th scope="col">Game</th>
+                        <th scope="col" style="width:15%">Live Games</th>
+                        <th scope="col" style="width:25%">Game</th>
                         <th scope="col">Revenue</th>
                         <th scope="col">DAU</th>
                         <th scope="col">New Users</th>
-                        <th scope="col">DAU</th>
-                        <th scope="col"></th>
+                        <th scope="col">MAU</th>
+                        <!--<th scope="col"></th>-->
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
+                        <td>1</td>
                         <td>
                             <img src="assets/huawei.png" width="40" height="40" style="margin-right: 5%;">
                             <img src="assets/huaweitext.png"></td>
@@ -300,10 +230,10 @@
                         <td>@mdo</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td><a href="#" class="table-view-btn">View</a></td>
+                        <!--<td><a href="#" class="table-view-btn">View</a></td>-->
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
+                        <td>2</td>
                         <td>
                             <img src="assets/huawei.png" width="40" height="40" style="margin-right: 5%;">
                             <img src="assets/huaweitext.png"></td>
@@ -311,10 +241,10 @@
                         <td>@fat</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td><a href="#" class="table-view-btn">View</a></td>
+                        <!--<td><a href="#" class="table-view-btn">View</a></td>-->
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
+                        <td>3</td>
                         <td>
                             <img src="assets/huawei.png" width="40" height="40" style="margin-right: 5%;">
                             <img src="assets/huaweitext.png"></td>
@@ -322,10 +252,10 @@
                         <td>@twitter</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td><a href="#" class="table-view-btn">View</a></td>
+                        <!--<td><a href="#" class="table-view-btn">View</a></td>-->
                       </tr>
-                      <tr>
-                        <th scope="row">3</th>
+                      <tr class="bug-solve">
+                        <td>3</td>
                         <td>
                             <img src="assets/huawei.png" width="40" height="40" style="margin-right: 5%;">
                             <img src="assets/huaweitext.png"></td>
@@ -333,7 +263,7 @@
                         <td>@twitter</td>
                         <td>Otto</td>
                         <td>@mdo</td>
-                        <td><a href="#" class="table-view-btn">View</a></td>
+                        <!--<td><a href="#" class="table-view-btn">View</a></td>-->
                       </tr>
                     </tbody>
                   </table>
@@ -345,17 +275,18 @@
     <script type="text/javascript">
     $(function() {
     
-        var start = moment().subtract(1, 'days');
+        var start = moment().subtract(1, 'days');//1
         var end = moment();
-    
+        console.log(String(start.format('DD/MM/YYYY'))+"+1")
         function cb(start, end) {
             $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
         }
     
         $('#reportrange').daterangepicker({
-            startDate: start,
-            endDate: end,
-            ranges: {
+    "startDate": start,
+    "endDate": end,
+    "maxDate": String(moment().subtract(0, 'days').format('MM/DD/YYYY')+1)+"+2",
+    ranges: {
                'Today': [moment(), moment()],
                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
@@ -363,8 +294,9 @@
                'This Month': [moment().startOf('month'), moment().endOf('month')],
                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
             }
-        }, cb);
-    
+},cb);
+        
+
         cb(start, end);
 
         /* 
@@ -428,6 +360,12 @@
                 document.querySelector(".sidenav").classList.add("box-shadow-none");
             
         }
+        document.addEventListener('readystatechange', function(ev) {
+            if(document.readyState === 'complete'){
+                document.querySelector('div.ranges > ul > li:nth-child(1)').remove();
+            }
+
+        });
     </script>
 </body>
 </html>
