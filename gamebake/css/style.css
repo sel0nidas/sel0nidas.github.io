@@ -9,7 +9,7 @@ body{
     border-bottom: 1px !important;
 }
 .container-tables{
-    box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
+    filter: drop-shadow(0px 25px 17.5px rgba(0,0,0,0.1));
 }
 td{
     vertical-align: middle !important;
@@ -18,107 +18,7 @@ img { max-width: 100%; height: auto; }
 .table td, .table th{
     border-top-width: 0.7px !important;
 }
-@media only screen and (min-width: 768px){
-    
-    .padding-desktop{
-        padding: 0.5rem 3rem !important;
-    }
-}
-@media only screen and (max-width: 768px) {
-    table {
-        width: 300% !important;
-        max-width: 300% !important;
-    }
-    table{
-        font-size: 2vw !important;
-    }
-    .overview-section>div{
-        padding: 0 !important;
-    }
-    .nav-links-bloque {
-      display: none !important;
-    }
-    .mobile-menu{
-        display: block !important;
-    }
-    
-    .daterangepicker{
-        right: 0 !important;
-    }
-    p,td,th{   
-        font-size: 3vw !important;
-    }
-}   
 
-@media only screen and (min-width: 768px) and (max-width: 1280px) {
-    .padding-desktop{
-        padding: 1rem 5rem;
-    }
-    h1{
-        font-size: 3vw !important;
-    }
-    h2{   
-        font-size: 2.5vw !important;
-    }
-    h3{   
-        font-size: 2vw !important;
-    }
-    h4{   
-        font-size: 1.5vw !important;
-    }
-    h5{   
-        font-size: 1.3vw !important;
-    }
-    h6{   
-        font-size: 1.15vw !important;
-    }
-    p,td,th{   
-        font-size: 1vw !important;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .padding-desktop{
-        padding: 1rem 5rem !important;
-    }
-}
-@media only screen and (min-width: 2160px) {
-    
-    .height-200{
-        height: 17vh !important;
-    }
-    .padding-desktop{
-        padding: 1rem 25rem !important;
-    }
-    .overview-bloque-inner{
-        padding: 5% 4% !important;
-        border-radius: 1.5rem !important;
-    }
-    .circle-question-mark{
-        width: 7% !important;
-    }
-    h1{
-        font-size: 3.5rem !important;
-    }
-    h2{   
-        font-size: 2.9rem !important;
-    }
-    h3{   
-        font-size: 2rem !important;
-    }
-    h4{   
-        font-size: 1.8rem !important;
-    }
-    h5{   
-        font-size: 1.4rem !important;
-    }
-    h6{   
-        font-size: 1.2rem !important;
-    }
-    p, td,th{   
-        font-size: 1.3rem !important;
-    }
-}
 
 .navbar-height{
     height: 17vh;
@@ -170,7 +70,7 @@ a:hover{
     height: 100%;
     padding: 5% 4%;
     padding-top: 0 !important;
-    box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
+    filter: drop-shadow(0px 25px 17.5px rgba(0,0,0,0.1));
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -188,7 +88,7 @@ a:hover{
     padding: 3rem 0;
     text-align: center;
     display: none !important;
-    box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
+    filter: drop-shadow(0px 25px 17.5px rgba(0,0,0,0.1));
     border: 1px solid #b7b9ba;
     border-radius: 0.5rem;
 }
@@ -373,4 +273,108 @@ th,td{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (min-width: 768px){
+    
+    .padding-desktop{
+        padding: 0.5rem 3rem !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    table{
+        font-size: 2vw !important;
+    }
+    .overview-section>div{
+        padding: 0 !important;
+    }
+    .nav-links-bloque {
+      display: none !important;
+    }
+    .mobile-menu{
+        display: block !important;
+    }
+    
+    .daterangepicker{
+        right: 0 !important;
+    }
+    p,td,th{   
+        font-size: 3vw !important;
+    }
+}   
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .padding-desktop{
+        padding: 1rem 5rem;
+    }
+    h1{
+        font-size: 3vw !important;
+    }
+    h2{   
+        font-size: 2.5vw !important;
+    }
+    h3{   
+        font-size: 2vw !important;
+    }
+    h4{   
+        font-size: 1.5vw !important;
+    }
+    h5{   
+        font-size: 1.3vw !important;
+    }
+    h6{   
+        font-size: 1.15vw !important;
+    }
+    p,td,th{   
+        font-size: 1vw !important;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .padding-desktop{
+        padding: 1rem 5rem !important;
+    }
+    .height-200{
+        height: 17vh !important;
+    }
+}
+@media only screen and (min-width: 2160px) {
+    
+    .height-200{
+        height: 22vh !important;
+    }
+    .padding-desktop{
+        padding: 1rem 15rem !important;
+    }
+    .overview-inner-top-bloque{
+        border-radius: 1.5rem !important;
+    }
+    .overview-bloque-inner{
+        padding: 5% 4% !important;
+        border-radius: 1.5rem !important;
+    }
+    .circle-question-mark{
+        width: 6% !important;
+    }
+    h1{
+        font-size: 3.5rem !important;
+    }
+    h2{   
+        font-size: 3rem !important;
+    }
+    h3{   
+        font-size: 2.1rem !important;
+    }
+    h4{   
+        font-size: 1.8rem !important;
+    }
+    h5{   
+        font-size: 1.8rem !important;
+    }
+    h6,p{   
+        font-size: 1.3rem !important;
+    }
+    #container-tables p, #container-tables td, #container-tables th{   
+        font-size: 1.5rem !important;
+    }
 }
