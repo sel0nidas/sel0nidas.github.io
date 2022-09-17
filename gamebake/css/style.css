@@ -1,0 +1,376 @@
+body{
+    font-size: 2vh;
+    background-color: #f7f7f7 !important;
+}
+.logo-bloque{
+    justify-content: flex-start !important;
+}
+.table thead th{
+    border-bottom: 1px !important;
+}
+.container-tables{
+    box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
+}
+td{
+    vertical-align: middle !important;
+}
+img { max-width: 100%; height: auto; }
+.table td, .table th{
+    border-top-width: 0.7px !important;
+}
+@media only screen and (min-width: 768px){
+    
+    .padding-desktop{
+        padding: 0.5rem 3rem !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    table {
+        width: 300% !important;
+        max-width: 300% !important;
+    }
+    table{
+        font-size: 2vw !important;
+    }
+    .overview-section>div{
+        padding: 0 !important;
+    }
+    .nav-links-bloque {
+      display: none !important;
+    }
+    .mobile-menu{
+        display: block !important;
+    }
+    
+    .daterangepicker{
+        right: 0 !important;
+    }
+    p,td,th{   
+        font-size: 3vw !important;
+    }
+}   
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .padding-desktop{
+        padding: 1rem 5rem;
+    }
+    h1{
+        font-size: 3vw !important;
+    }
+    h2{   
+        font-size: 2.5vw !important;
+    }
+    h3{   
+        font-size: 2vw !important;
+    }
+    h4{   
+        font-size: 1.5vw !important;
+    }
+    h5{   
+        font-size: 1.3vw !important;
+    }
+    h6{   
+        font-size: 1.15vw !important;
+    }
+    p,td,th{   
+        font-size: 1vw !important;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .padding-desktop{
+        padding: 1rem 5rem !important;
+    }
+}
+@media only screen and (min-width: 2160px) {
+    
+    .height-200{
+        height: 17vh !important;
+    }
+    .padding-desktop{
+        padding: 1rem 25rem !important;
+    }
+    .overview-bloque-inner{
+        padding: 5% 4% !important;
+        border-radius: 1.5rem !important;
+    }
+    .circle-question-mark{
+        width: 7% !important;
+    }
+    h1{
+        font-size: 3.5rem !important;
+    }
+    h2{   
+        font-size: 2.9rem !important;
+    }
+    h3{   
+        font-size: 2rem !important;
+    }
+    h4{   
+        font-size: 1.8rem !important;
+    }
+    h5{   
+        font-size: 1.4rem !important;
+    }
+    h6{   
+        font-size: 1.2rem !important;
+    }
+    p, td,th{   
+        font-size: 1.3rem !important;
+    }
+}
+
+.navbar-height{
+    height: 17vh;
+}
+.mobile-menu{
+    display: none;
+}
+.login-body{
+    height: 100vh;
+    width: 100vw;
+}
+.bg-purple-img{
+    background-image: url('../assets/BG_Purple.png');
+    background-size: 100% 100%;
+}
+.daterangepicker{
+    right: calc(3rem + 15px) !important;
+}
+.daterangepicker.opensright:before{
+    left: unset !important;
+    right: 9px;
+}
+.daterangepicker.opensright:after{
+    left: unset!important;
+    right: 10px;
+}
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.full-centered{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    margin-bottom: 0 !important;
+}
+a:hover{
+    text-decoration: none !important;
+}
+.nav-links-bloque>a{
+    padding: 0% 2.5%;
+    color: #6c757d;
+}
+
+.overview-bloque-inner{
+    position: relative;
+    height: 100%;
+    padding: 5% 4%;
+    padding-top: 0 !important;
+    box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.overview-inner-top-bloque{
+    z-index: 999;
+    background-color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top:-5%;
+    padding: 3rem 0;
+    text-align: center;
+    display: none !important;
+    box-shadow: 10px 10px 49px -12px rgba(0,0,0,0.58);
+    border: 1px solid #b7b9ba;
+    border-radius: 0.5rem;
+}
+.circle-question-mark>svg{
+    fill: #707070;
+}
+.circle-question-mark{
+    cursor: pointer;
+    position: absolute; top:5px; right: 10px; width: 5%;
+}
+.circle-question-mark:hover + .overview-inner-top-bloque, 
+.overview-inner-top-bloque:hover{
+    display: block !important;
+    
+}
+.overview-inner{
+    color: #6c757d;
+    display: flex;
+    padding: 2%;
+    align-items: flex-end;
+}
+.table-border{
+    border-radius: 1rem;
+}
+.height-200{
+    height: 25vh !important;
+}
+th{
+    font-weight: 400;
+}
+th,td{
+    font-size: 1.1vw;
+    padding: 1.5% 3% !important;
+    color: #6c757d;
+
+}
+.table-view-btn{
+    border: 1px solid #b7b9ba;
+    padding: 2% 5%;
+    color: #6c757d;
+    transition: all 0.2s ease-in-out;
+}
+.table-view-btn:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.login-side-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-input{
+    width: 300px;
+    height: 35px;
+    border-radius: 0.3rem;
+    outline: 0 !important;
+    border: 0;
+    color: #6c757d;
+}
+.name-input{
+    background-color: #ebebeb;
+}
+.name-input::placeholder{
+    text-align: center;
+}
+.login-info{
+    color: #b7b9ba;
+    font-weight: 400;
+
+}
+.submit-shadow{
+    cursor: pointer;
+    box-shadow: 0px 37px 35px -12px rgba(0,0,0,0.55);
+}
+
+.margin-left{
+	margin-left: 0px !important;
+}
+
+/* Side Navigation Bar */
+.box-shadow-none{
+	box-shadow: 0 !important;
+}
+.sidenav {
+	-webkit-box-shadow: 10px 0px 16px -3px rgba(0,0,0,0.79); 
+	box-shadow: 10px 0px 16px -3px rgba(0,0,0,0.09);
+	height: 100vh; /* 100% Full-height */
+	width: 280px;
+	 margin-left:-280px;/* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #f7f7f7; /* Black or #f2f7fd*/ 
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav-btc{
+	padding-left: 13%;
+}
+.sidenav-top{
+	padding: 5% 2%;
+}
+.sidenav a{
+	font-weight: 600;
+	font-style: normal;
+    color: #888c9dbf !important;
+}
+/* The navigation menu links */
+.sidenav a > h6, .sidenav a > h4 {
+	padding: 20px 8px 20px 32px;
+	text-decoration: none;
+	color: #818181;
+	display: flex;
+	justify-content: space-between;
+    font-family: work-sans,sans-serif;
+	font-weight: 600;
+	font-style: normal;
+    color: #888c9dbf;
+    transition: all 0.2s ease-in-out;
+}
+.sidenav a > h4{
+	padding-right: 5%;
+}
+.sidenav a:hover{
+	background-color: black;
+    transition: all 0.2s ease-in-out;
+}
+.sidenav a{
+	display: flex;
+	align-items: center;
+}
+.sidenav a:hover>h3{
+	color:white;
+}
+.sidenav a:hover>h4, .sidenav a:hover>h6{
+	color: white !important;
+}
+.sidenav-link-bloque{
+	margin-top: 5%;
+}
+.closebtn:hover{
+    background-color: #f7f7f7 !important;
+}
+.sidenav-link{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid black;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: white;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	font-size: 36px;
+	padding-right: 5%;
+	border:3px solid #f2f7fd;
+	border-radius: 0.3rem;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
