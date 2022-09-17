@@ -306,6 +306,9 @@ th,td{
 }   
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .daterangepicker{
+        right: calc(5rem + 15px) !important;
+    }
     .padding-desktop{
         padding: 1rem 5rem;
     }
@@ -333,14 +336,17 @@ th,td{
 }
 
 @media only screen and (min-width: 1280px) {
+    .daterangepicker{
+        right: calc(5rem + 15px) !important;
+    }
     .padding-desktop{
         padding: 1rem 5rem !important;
     }
-    .height-200{
-        height: 25vh !important;
-    }
 }
 @media only screen and (min-width: 2160px) {
+    .daterangepicker{
+        right: calc(15rem + 15px) !important;
+    }
     .padding-desktop{
         padding: 1rem 15rem !important;
     }
@@ -377,9 +383,33 @@ th,td{
     }
 }
 
+@media only screen and (min-width: 3160px) {
+    
+    h1{
+        font-size: 2.4vw !important;
+    }
+    h2{   
+        font-size: 1.9vw !important;
+    }
+    h3{   
+        font-size: 1.4vw !important;
+    }
+    h4{   
+        font-size: 1.3vw !important;
+    }
+    h5{   
+        font-size: 1.2vw !important;
+    }
+    h6{   
+        font-size: 1.15vw !important;
+    }
+    p,td,th{   
+        font-size: 1vw !important;
+    }
+}
 
-@media only screen and (min-width: 2160px) {
+@media only screen and (min-height: 1500px) {
     .height-200{
-        height: 17vh !important;
+        height: 20vh !important;
     }
 }
