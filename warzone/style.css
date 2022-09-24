@@ -1,0 +1,167 @@
+h1,h2,h3,h4,h5,h6,p,div,html,body{
+	font-family: 'Signika', sans-serif;
+}
+@media (max-width: 548px) {
+	.navigation{
+		flex-direction:column;
+	}
+}
+@media (max-width: 1000px) {
+    .navigation a{
+        width: 100% !important;
+    }
+	.top-main{
+		margin: 0 !important;
+	}
+    .buy-now{
+        margin-top: 30px !important;
+    }
+    .buy-now>button, .bottom-table>table{
+        width: 80% !important;
+    }
+	body {
+    width: 70%;
+    margin:0 auto;
+    }
+    .main-title{
+        margin-top: 5%;
+    }
+	.bottom-cards>.col-md-4{
+		padding:0 1% !important;
+	}
+	
+	.supported-os{
+		padding: 0 !important;
+	}
+}
+@media (min-width: 1000px){
+body {
+    width: 800px;
+    margin:0 auto;
+    }
+}
+body{
+    background: black;
+    color: #000;
+}/*
+hr{
+    width: 100%;
+}*/
+p{
+    margin-bottom: 0;
+}
+header{
+    background-color: black;
+    color:white;
+    width: 100%;
+    padding:2% 0%;
+    height: auto;
+}
+#logo{
+    font-size: 42px;
+}
+#under-logo-text{
+    font-size: 12px;
+}
+.header-hr{
+    border-color: white;
+}
+.navigation{
+    padding: 0;
+    margin-top: 1.5%;
+    min-height: 100%;
+
+}
+ul{
+}
+.row{
+    margin:0;
+}
+.navigation a{
+    
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    padding: 0.75% 2%;
+}
+.navigation a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+.main{
+    padding: 0 2% 3% 3%;
+    overflow: hidden;
+    background-color: white;
+}
+.top-main{
+	margin: 3% 2%;
+}
+h1{
+    font-size: 150%;
+    font-weight: normal;
+}
+.supported-os>ul{
+    height: 286px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-inline-start: 40px;
+}
+.supported-os>ul>li{
+    font-size: 0.9rem;
+    font-weight: 400;
+	
+}
+.features-list{
+	margin-top: 2%;
+    padding-inline-start: 0px !important;
+	list-style-type:none;
+}
+.features-list>li{
+    margin-top: 3%;
+}
+.bottom-table{
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bottom-table>table{
+    width: 50%;
+}
+.feature-bottom-text{
+    text-indent: 0px;
+}
+.buy-now{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:2%;
+}
+.btn-outline-dark{
+    padding: 1% 10%;
+    border-radius: 0 !important;
+}
+.btn-outline-dark:hover{
+    background-color: #000;
+}
+.bottom-cards{
+	display:flex;
+	text-align:center;
+	margin-top:3% !important;
+}
+.card{
+	/* height:100%; Birlikte aynı yükseklikte olmaları için bu kısmı kullanabilirsiniz ayrıca bir üst blok için align-items:stretch veriniz*/
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+    margin-bottom: 0 !important;
+    line-height: normal;
+}
