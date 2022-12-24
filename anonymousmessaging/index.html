@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Anony - Anonymous Messaging</title>
+    <link rel="icon" type="image/x-icon" href="./logo.ico">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        const getMobileOS = () => {
+        const ua = navigator.userAgent
+        if (/android/i.test(ua)) {
+          return "Android"
+        }
+        else if (/iPad|iPhone|iPod/.test(ua)){
+          return "iOS"
+        }
+        return "Other"
+        }
+        function directToStore(){
+            if(getMobileOS() == "iOS")
+                window.location.href = "http://apps.apple.com/tr/app/anony-anonymous-messaging/id1603045164"
+            
+            else if(getMobileOS() == "Android"){
+                window.location.href = "http://play.google.com/store/apps/details?id=freelancer.istanbul.ginger&gl=TR"
+            }
+            else{
+                window.location.href = "http://play.google.com/store/apps/details?id=freelancer.istanbul.ginger&gl=TR"
+            }
+        }
+        //alert(getMobileOS());
+    </script>
+    <style>
+        html{
+            overflow-x: hidden;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: #2D9BF0;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner-main{
+            width: 500px;
+        }
+        .bottom-section{
+            padding: 2% 8%;
+            display: flex;
+            flex-direction: column;
+        }
+        button{
+            margin: 0% 15%;
+            background-color: #FEF445 !important;
+            padding: 4% 5% !important;
+            border-radius: 0.8rem !important;
+        }
+        h1{
+            text-align: center;
+        }
+        .sub-text{
+            padding: 0% 5%;
+            text-align: center;
+        }
+    </style>
+    <div id="main" class="main">
+        <div class="inner-main">
+        <h1>ANONY</h1>
+        <h1>ANONİM MESAJLAŞMA</h1>
+    <div class="pl-5 pr-5">
+        <img src="logo.png" width="100%" height="100%">
+    </div>
+    <div class="bottom-section">
+        <p class="sub-text">Yakın Arkadaşlarınızla gruplar halinde anonim mesajlaşın ve sınırsız eğlenin</p>
+        <button class="btn" onclick="directToStore()"><b>ŞİMDİ İNDİR</b></button>
+    </div>
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>
