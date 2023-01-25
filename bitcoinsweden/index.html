@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sweden</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.jpeg"  type="image/x-icon"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+        <link rel="preload" href="/assets/Bitrawr-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika&display=swap" rel="stylesheet">
+        <link rel="preload" href="/assets/Bitrawr-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.typekit.net/yof3who.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var xmlhttp = new XMLHttpRequest();
+            var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+            
+            xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4  &&  this.status == 200) {
+                var json = JSON.parse(this.responseText);
+                parseJson(json);
+              }		
+            };
+            
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+            
+            function parseJson(json) {
+              var usdValue = json["bpi"]["USD"]["rate"];
+            usdValue = usdValue.split(".");
+            console.log(usdValue);
+              document.getElementById("data").innerHTML = "$" + usdValue[0];
+            
+              document.getElementById("data2").innerHTML = "$" + usdValue[0];
+            }
+        </script>
+        <div id="mySidenav" class="sidenav">
+            <div class="sidenav-top row" style="margin-right: 0 !important;">
+                <div class="sidenav-btc col-10" style="display: flex; align-items: center;">
+                    <img src="bitcoin-btc-logo.svg" width="20" height="20" style="margin-bottom: 0.7%;">
+                    &nbsp; $52.300
+                </div>
+                <a href="javascript:void(0)" class="closebtn col-2" onclick="closeNav();">
+                    <h3>&times;</h3>
+                </a>
+            </div>
+            <div class="sidenav-link-bloque">
+                <a class="sidenav-link" href="#">
+                    <h6>About Us</h6>
+                    <h4> › </h4>
+                </a>
+                <a class="sidenav-link" href="#">
+                    <h6>About Us</h6>
+                    <h4> › </h4>
+                </a>
+                <a class="sidenav-link" href="#">
+                    <h6>About Us</h6>
+                    <h4> › </h4>
+                </a>
+            </div>
+        </div>
+        <header>
+            <div class="row header-container">
+                <div class="col-md-4 header-logo">
+                    <img src="cryptocurrenx.png" height="50">
+                </div>
+                <div class="mobile-menu" style="display: none;"><a onclick="openNav()"><i class="fas fa-bars"></i></a></div>
+                <div class="col-md-4 row navigation-links-bloque">
+                    <div class="col-md-4 navigation-links">
+                        <a href="#">Resources</a>
+                    </div>
+                    <div class="col-md-4 navigation-links">
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="col-md-4 navigation-links">
+                        <a href="#">Company</a>
+                    </div>
+                </div>
+                <div class="btc col-md-4 text-secondary">
+                    <img src="bitcoin-btc-logo.svg" width="20" height="20" style="margin-bottom: 0.7%;">
+                    &nbsp; 
+                    <h5 id="data"></h5>
+                </div>
+            </div>
+        </header>
+        <div class="containerx">
+            <div class="top-main-container">
+                <div style="max-width: 900px !important; margin: 0 auto !important; height: 300px;" class="row">
+                    <div class="col-md-8">
+                        <div class="top-main-top-title" style="margin:0; width: 100%; display: flex; align-items: center;">
+                            <a href="#">Home</a>
+                            <p> › Sweden</p>
+                        </div>
+                        <h1 class="top-main-main-title" style="display: flex; flex-direction: column;">
+                            <span class="h1-span-show">How to Buy Bitcoin in</span>
+                            <b style="">Sweden</b>
+                        </h1>
+                        <div class="top-main-description">
+                            <p>We found <b class="text-warning">10</b> trusted online cryptocurrency exchanges operating in Sweden including Coinbase, Bitpanda, and Binance.</p>
+                        </div>
+                        <div class="top-main-author">
+                            <div>
+                                <img src="pp1.jpg" class="author-photo" width="40" height="40" style="">
+                            </div>
+                            <div style='display: flex; flex-direction: column;  justify-content: center; padding-top: 1%;'>
+                                <h6 style='color: #007bff; font-size: 13px; font-family: "Open sans", sans-serif; font-weight: 800 !important;'>
+                                    Antuan Duran
+                                </h6>
+                                <blockquote style="font-size: 11px; margin-top: 1%;">
+                                    Last updated: December 01, 2021
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="display: flex; height: 100%; align-items: center; justify-content: center; padding: 3% 0;">
+                        <img src="sweden.svg" width="90%" style="border-radius:0.2rem; box-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="top-main-bottom-text" style="font-size: 12px;  display:flex; justify-content: center; width: 100%; padding: 2% 0;">
+            We may receive compensation when you click certain products. Before getting started, an important disclosure
+            </div>-->
+        <div class="step-text row">
+            <div class="col-md-12 pre-info" style="display: flex; justify-content: center;">
+                <h3>
+                    Hur investerar man i 
+                </h3>
+                <h3 style="padding-left: 1%;" class="text-warning">
+                    Bitcoin
+                </h3>
+                <h3 style="padding-left: 1%;">
+                    ?
+                </h3>
+            </div>
+            <div class="col-md-12 step" style="text-align: center;">
+                <h6>
+                    Bitcoin-ekonomin växer varje dag och de senaste åren har det visat sig vara en trevlig investeringsmöjlighet.
+                </h6>
+                <h6>
+                    Om du tycker att det är så komplicerat att börja investera i Bitcoin och altcoins
+                </h6>
+                <h6>
+                    här har vi förberett en steg-för-steg-guide för att lära dig hur du investerar i <b style="color:black;">Bitcoin</b>
+                </h6>
+            </div>
+            <div class="col-md-12 step-title" style="display: flex; text-align: center; justify-content: center; margin-top: 3%;">
+                <h3>Steg 1</h3>
+                <h3 style="padding-left: 1%;" class="text-warning">
+                    Registrera dig i en börs
+                </h3>
+            </div>
+            <div class="col-md-12 step">
+                <h6>
+                    Du måste registrera dig på en börs för att köpa bitcoin eller altcoins (som Ethereum/Doge)
+                </h6>
+                <div style="padding: 0 10%; display: flex; justify-content: center; margin-top: 5%;">
+                    <div style="border-radius: 10rem; padding: 3%; box-shadow: 0px 8px 10px 5px rgba(0,0,0,0.2);">
+                        <a href="https://accounts.binance.com/en/register?ref=LIUKWYQX"><img src="binance-logo.svg" width="100" height="100" style=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 step" style="margin-top: 2%;">
+                <h6>Binance är den mest populära börsen runt om i världen idag.</h6>
+                <h6>Den drivs i EU på Malta och är betrodd av miljontals människor runt om i världen.</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards row">
+                    <img class="col-md-7" style="width: 100%; height: 100%; border-radius: 0.5rem 0rem 0rem 0.5rem" src="binance-photo.png" width="">
+                    <div class="col-md-5">
+                        <div class="row" style="padding: 2%; height: 100%;">
+                            <div class="col-6 col-md-5" style="display: flex; align-items: center; justify-content: flex-start; height: 15%;">
+                                <div style="border-radius: 3rem; box-shadow: 0px 4px 10px 2px rgba(0,0,0,0.1); padding: 1%;">
+                                    <a href="https://accounts.binance.com/en/register?ref=LIUKWYQX"><img src="binance-logo.svg" width="40" height="40" ></a>
+                                </div>
+                                <h3 class="movie-card-title">Binance</h3>
+                            </div>
+                            <div class="col-6 col-md-7" style="display: flex; justify-content: flex-end; height: 15%;">
+                                <h6 class="movie-cards-price" id="data2">$53,500</h6>
+                            </div>
+                            <div class="col-md-12 row movie-card-top-grid" style="padding:0; margin:0; margin-top:1%; width: 100%; height: 15%;">
+                                <div class="col-6 col-md-3 border-right">
+                                    <div class="property-top-text">
+                                        <h6>Enkel</h6>
+                                    </div>
+                                    <div class="property-bottom-text">
+                                        <h5>Enkel</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 border-right">
+                                    <div class="property-top-text">
+                                        <h6>Enkel</h6>
+                                    </div>
+                                    <div class="property-bottom-text">
+                                        <h5>Enkel</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 border-right">
+                                    <div class="property-top-text">
+                                        <h6>Enkel</h6>
+                                    </div>
+                                    <div class="property-bottom-text">
+                                        <h5>Enkel</h5>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="property-top-text">
+                                        <h6>Enkel</h6>
+                                    </div>
+                                    <div class="property-bottom-text">
+                                        <h5>Enkel</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 movie-cards-sub-text" style="height: 50%; padding-top: 8%;">
+                                <h6>Binance ar verdians</h6>
+                            </div>
+                            <div class="col-md-12 row" style="padding: 0; margin:0; ">
+                                <div class="col-md-2 movie-cards-info-bloque" style="display: flex; padding: 0 2%; margin:0; width: 100%; ">
+                                    <a href="#" class="movie-cards-info-btn" style="width: 100%;">INFO</a>
+                                </div>
+                                <div class="col-md-10" style="display: flex; padding: 0; margin:0; width: 100%; ">
+                                    <a href="https://accounts.binance.com/en/register?ref=LIUKWYQX" class="movie-cards-registeria-btn" style="width: 100%;">REGISTERIA</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 step-title" style="display: flex; text-align: center; justify-content: center; margin-top: 3%;">
+                <h3>Steg 2</h3>
+                <h3 style="padding-left: 1%;" class="text-warning">
+                    <a class="text-warning" href="https://accounts.binance.com/en/register?ref=LIUKWYQX" style="font-weight: 400; font-family: 'Roboto', sans-serif;">KLICKA HÄR FÖR ATT REGISTRERA I BINANCE</a>
+                </h3>
+            </div>
+            <div class="col-md-12 step" style="margin-top: 2%;">
+                <h6>Binance är den mest populära börsen runt om i världen idag.</h6>
+                <h6>Den drivs i EU på Malta och är betrodd av miljontals människor runt om i världen.</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/Screen-Shot-2021-12-01-at-05.02.21.png" width="">
+                </div>
+            </div>
+            <div class="col-md-12 step-title" style="display: flex; text-align: center; justify-content: center; margin-top: 3%;">
+                <h3>Steg 3</h3>
+                <h3 style="padding-left: 1%;" class="text-warning">
+                    Fullständig Registrering
+                </h3>
+            </div>
+            <div class="col-md-12 step" style="margin-top: 2%;">
+                <h6>På den här skärmen skriv din e-post och ange ett lösenord för ditt konto.</h6>
+                <h6>Glöm inte att lösenordet ska innehålla en stor bokst Exempel “Finhund1546.”</h6>
+                <h6>Alternativt kan du registrera dig med ditt mobilnummer istället för din e-post.</h6>
+                <h6>Klicka på skapa konto och låt oss gå vidare till nästa steg.</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/Screen-Shot-2021-12-01-at-04.32.56.png">
+                </div>
+            </div>
+            <div class="col-md-12 step-title" style="display: flex; text-align: center; justify-content: center; margin-top: 3%;">
+                <h3>Steg 4</h3>
+                <h3 style="padding-left: 1%;" class="text-warning">
+                    Verifiera Din Epost
+                </h3>
+            </div>
+            <div class="col-md-12 step" style="margin-top: 2%;">
+                <h6>I det här steget kommer en 6-siffrig verifieringskod till din e-post.</h6>
+                <h6>Kontrollera din e-post och skriv in koden i rutorna</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/Screen-Shot-2021-12-01-at-04.50.20.png">
+                </div>
+            </div>
+            <div class="col-md-12 step-title" style="display: flex; text-align: center; justify-content: center; margin-top: 3%;">
+                <h3>Steg 5</h3>
+                <h3 style="padding-left: 1%;" class="text-warning">
+                    Verifiera Ditt Konto
+                </h3>
+            </div>
+            <div class="col-md-12 step" style="margin-top: 2%;">
+                <h6>I det här steget kommer du att se verifieringsknappen överst på sidan.</h6>
+                <h6>Gå till verifieringssidan och ange informationen de ber dig om.</h6>
+                <h6>För verifiering kommer de att be dig ta ett foto av ditt identitetskort.</h6>
+                <h6>Du kanske tycker att det inte är säkert att dela din identifiering med ett internetföretag,</h6>
+                <h6>men å andra sidan är dessa börser ansvariga för regeringen, särskilt i penningtvättsfrågan.</h6>
+                <h6>De kan lagra din information men de kan inte använda denna information och de kan inte dela till tredje part.</h6>
+                <h6>Tack och lov är de mycket reglerade av Europeiska unionen</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/Screen-Shot-2021-12-01-at-04.54.33.png">
+                </div>
+            </div>
+            <div class="col-md-12 step">
+                <h6>Klicka på <a href="https://accounts.binance.com/en/register?ref=LIUKWYQX">“Börja nu”</a>-knappen ochstarta verifieringen</h6>
+            </div>
+            <div class="col-md-12 step-title" style="display: flex; text-align: center; justify-content: center; margin-top: 3%;">
+                <h3>Steg 6</h3>
+                <h3 style="padding-left: 1%;" class="text-warning">
+                    Grattis du klarade nästan det
+                </h3>
+            </div>
+            <div class="col-md-12 step" style="margin-top: 2%;">
+                <h6>Nu har du slutfört registreringssteget.</h6>
+                <h6>De godkänner i allmänhet nya konton inom några timmar (högst 1 dag)</h6>
+                <h6>Nu från toppen av Binance-sidan kan du gå till din plånbok.</h6>
+                <h6>Klicka på Plånbok längst upp till höger på Binance-sidan och kom till din Översikt</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/Screen-Shot-2021-12-01-at-04.58.42.png">
+                </div>
+            </div>
+            <div class="col-md-12 step">
+                <h6>Under Översikt ser du fiat och spot. Klicka på fiat och spot för att kontrollera din plånbok</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/InkedScreen-Shot-2021-12-03-at-05.34.00_LI-scaled.jpg">
+                </div>
+            </div>
+            <div class="col-md-12 step">
+                <h6>Klicka på insättningsknappen på plånbokssidan. Efter det kan du sätta in pengar på ditt Binance-konto.</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/InkedScreen-Shot-2021-12-03-at-04.57.09_LI-scaled.jpg">
+                </div>
+            </div>
+            <div class="col-md-12 step">
+                <h6>Klicka på knappen Insättning på plånbokssidan.</h6>
+                <h6>Den kommer att fråga dig om du inte har kryptoinsättning eller fiat-insättning,</h6>
+                <h6>eftersom du inte har någon krypto för tillfället, välj fiat-insättning</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/Screen-Shot-2021-12-03-at-04.59.50.png">
+                </div>
+            </div>
+            <div class="col-md-12 step">
+                <h6>På nästa sida Välj EURO för insättning.</h6>
+                <h6>Om du inte har ett Eurokort eller konto går det bra, det konverteras från SEK när du betalar</h6>
+                <h6>Nu, om du sätter in från bankkort har de %1,8 provisionsavgift.</h6>
+                <h6>Om du väljer att göra en SEPA-överföring, välj ADVCASH Kontobalans,</h6>
+                <h6>de tar bara 1 euro i provision för SEPA-överföringar</h6>
+            </div>
+            <div class="col-md-12 step-title" style="display: flex; text-align: center; justify-content: center; margin-top: 3%;">
+                <h3>Steg 7</h3>
+                <h3 style="padding-left: 1%;" class="text-warning">
+                    <a class="text-warning" href="https://accounts.binance.com/en/register?ref=LIUKWYQX" style="font-weight: 400; font-family: 'Roboto', sans-serif;">Köp Bitcoin</a>
+                </h3>
+            </div>
+            <div class="col-md-12 step">
+                <h6>Efter att du satt in pengar på ditt konto nu är det dags att köpa bitcoin med de pengarna.</h6>
+                <h6>Gå till plånbokslänken överst på din Binance-sida och klicka på Fiat och Spot</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/btc-kop-scaled.jpg">
+                </div>
+            </div>
+            <div class="col-md-12 step">
+                <h6>Nu kom du till Fiat och Spot-sidan. Bitcoin är överst på listan.<br>(BTC är det korta namnet på Bitcoin, om du inte ser Bitcoin på toppen, skriv BTC i sökfältet).</h6>
+                <h6>Klicka på köplänken till höger på skärmen.</h6>
+            </div>
+            <div class="col-md-12">
+                <div class="movie-cards">
+                    <img class="col-md-12" style="width: 100%; height: 100%; border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;" src="https://cryptocurrenx.com/articles/wp-content/uploads/2021/12/Screen-Shot-2021-12-03-at-05.34.55-1.png">
+                </div>
+            </div>
+            <div class="col-md-12 step">
+                <h6>Skriv i rutan för hur mycket EURO du vill köpa bitcoin för och klicka på köp.</h6>
+                <h6>Där är du, grattis. Du gick nu med i den snabbast växande ekonomin i världen.</h6>
+                <h6>Du kan kontrollera bitcoinsaldot från Fiat och Spot-sidan.</h6>
+            </div>
+            <div id="accordion" style="width: 100%;">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0" style="width:100%;">
+                            <button class="btn btn-link card-button" style="width:100%; display:flex; justify-content: space-between;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h6>Collapsible Group Item #3</h6>
+                                <h6><i class="fas fa-chevron-down"></i></h6>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0" style="width:100%;">
+                            <button class="btn btn-link card-button collapsed" style="width:100%; display:flex; justify-content: space-between;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h6>Collapsible Group Item #3</h6>
+                                <h6><i class="fas fa-chevron-down"></i></h6>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0" style="width:100%;">
+                            <button class="btn btn-link card-button collapsed" style="width:100%; display:flex; justify-content: space-between;" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h6>Collapsible Group Item #3</h6>
+                                <h6><i class="fas fa-chevron-down"></i></h6>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0" style="width:100%;">
+                            <button class="btn btn-link card-button collapsed" style="width:100%; display:flex; justify-content: space-between;" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h6>Collapsible Group Item #3</h6>
+                                <h6><i class="fas fa-chevron-down"></i></h6>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headinFive">
+                        <h5 class="mb-0" style="width:100%;">
+                            <button class="btn btn-link card-button collapsed" style="width:100%; display:flex; justify-content: space-between;" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h6>Collapsible Group Item #3</h6>
+                                <h6><i class="fas fa-chevron-down"></i></h6>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0" style="width:100%;">
+                            <button class="btn btn-link card-button collapsed" style="width:100%; display:flex; justify-content: space-between;" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <h6>Collapsible Group Item #3</h6>
+                                <h6><i class="fas fa-chevron-down"></i></h6>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer style="margin-top: 5%; padding:5% 18%; border-top:1px solid grey;" class="row">
+            <div class="col-md-5 col-12">
+                <img src="cryptocurrenx.png" width="100%">
+                <h6 sty>Bitrawr is a useful Bitcoin resource guiding you to the best exchanges, most-trusted wallets, nearest ATMs, efficient mining equipment, all in one cohesive site.</h6>
+                <copyright>
+                    <h6>© 2021 Bitrawr, All rights reserved</h6>
+                </copyright>
+            </div>
+            <div class="col-md-3 col-12 footer-link-bloque links">
+                <h4>Links</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h6>Hyperbitcoinization</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6>Hyperbitcoinization</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h6>Hyperbitcoinization</h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 social-links footer-link-bloque" style="padding:0 6%;  ">
+                <div class="col-md-12" style="display: flex; justify-content: space-between;">
+                    <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icons"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            function openNav() {
+            
+            	document.querySelector(".sidenav").classList.add("margin-left");
+            	document.querySelector(".sidenav").classList.remove("box-shadow-none");
+            }
+            function closeNav() {
+            
+            		document.querySelector(".sidenav").classList.remove("margin-left");
+            		document.querySelector(".sidenav").classList.add("box-shadow-none");
+            	
+            }
+        </script>
+    </body>
+</html>
